@@ -6,3 +6,4 @@ What is in this project:
 - Standard components was used
 - No 3rd party libs used
 - Pull to refresh
+- Simultaneous API calls
