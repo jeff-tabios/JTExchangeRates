@@ -29,6 +29,7 @@
 		6294D793260733AF00FA9996 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D792260733AF00FA9996 /* ServiceTests.swift */; };
 		6294D7952607340E00FA9996 /* BankExchangesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D7942607340E00FA9996 /* BankExchangesViewModelTests.swift */; };
 		6294D7972607853500FA9996 /* ExchangeRatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D7962607853500FA9996 /* ExchangeRatesViewModel.swift */; };
+		6294D79926078ACE00FA9996 /* ExchangeRatesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D79826078ACE00FA9996 /* ExchangeRatesViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		6294D792260733AF00FA9996 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		6294D7942607340E00FA9996 /* BankExchangesViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankExchangesViewModelTests.swift; sourceTree = "<group>"; };
 		6294D7962607853500FA9996 /* ExchangeRatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewModel.swift; sourceTree = "<group>"; };
+		6294D79826078ACE00FA9996 /* ExchangeRatesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				6294D7942607340E00FA9996 /* BankExchangesViewModelTests.swift */,
+				6294D79826078ACE00FA9996 /* ExchangeRatesViewModelTests.swift */,
 				6294D792260733AF00FA9996 /* ServiceTests.swift */,
 				6294D7622607334700FA9996 /* Info.plist */,
 			);
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6294D793260733AF00FA9996 /* ServiceTests.swift in Sources */,
+				6294D79926078ACE00FA9996 /* ExchangeRatesViewModelTests.swift in Sources */,
 				6294D7952607340E00FA9996 /* BankExchangesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
