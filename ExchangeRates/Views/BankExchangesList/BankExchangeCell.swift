@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class BankExchangeCell: UITableViewCell {
-    var vm: BankExchangesViewModel?
+    
     var fromId: Int?
     var toId: Int?
+    var bankMap: [Int: String] = [:]
+    var currencyCodeMap: [Int: String] = [:]
 }

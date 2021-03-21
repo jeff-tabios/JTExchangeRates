@@ -24,9 +24,10 @@ class BankExchangesViewController: UIViewController {
             if let s = sender as? BankExchangeCell {
                 if let ratesVC = segue.destination as? ExchangeRatesViewController {
                     
-                    s.vm?.fromId = s.fromId
-                    s.vm?.toId = s.toId
-                    ratesVC.viewModel = s.vm!
+                    ratesVC.viewModel.fromId = s.fromId
+                    ratesVC.viewModel.toId = s.toId
+                    ratesVC.viewModel.bankMap = s.bankMap
+                    ratesVC.viewModel.currencyCodeMap = s.currencyCodeMap
                 }
             }
         }

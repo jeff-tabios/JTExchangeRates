@@ -28,6 +28,7 @@
 		6294D78F2607338400FA9996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6294D78E2607338400FA9996 /* Main.storyboard */; };
 		6294D793260733AF00FA9996 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D792260733AF00FA9996 /* ServiceTests.swift */; };
 		6294D7952607340E00FA9996 /* BankExchangesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D7942607340E00FA9996 /* BankExchangesViewModelTests.swift */; };
+		6294D7972607853500FA9996 /* ExchangeRatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D7962607853500FA9996 /* ExchangeRatesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		6294D78E2607338400FA9996 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6294D792260733AF00FA9996 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		6294D7942607340E00FA9996 /* BankExchangesViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankExchangesViewModelTests.swift; sourceTree = "<group>"; };
+		6294D7962607853500FA9996 /* ExchangeRatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				6294D77F2607336200FA9996 /* BankExchangesViewModel.swift */,
+				6294D7962607853500FA9996 /* ExchangeRatesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				6294D7882607336300FA9996 /* ModelExchanges.swift in Sources */,
 				6294D7832607336300FA9996 /* ExchangeRatesViewController.swift in Sources */,
 				6294D7892607336300FA9996 /* ModelBankRates.swift in Sources */,
+				6294D7972607853500FA9996 /* ExchangeRatesViewModel.swift in Sources */,
 				6294D78B2607336300FA9996 /* ModelBanks.swift in Sources */,
 				6294D7822607336300FA9996 /* BankService.swift in Sources */,
 				6294D7862607336300FA9996 /* BankExchangesListTableDelegate.swift in Sources */,

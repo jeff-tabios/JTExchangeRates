@@ -12,7 +12,7 @@ import UIKit
 class ExchangeRatesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     lazy var refreshControl = UIRefreshControl()
-    var viewModel = BankExchangesViewModel()
+    var viewModel = ExchangeRatesViewModel()
     
     override func viewDidLoad() {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")

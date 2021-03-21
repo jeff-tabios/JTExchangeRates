@@ -11,9 +11,6 @@ import Foundation
 class BankExchangesViewModel {
     let bankService = BankService()
     
-    var fromId: Int?
-    var toId: Int?
-    
     var banks: ModelBanks?
     var currencies: ModelCurrencies?
     var rates: [ModelCurrencyRates]?
@@ -23,7 +20,6 @@ class BankExchangesViewModel {
     var currencyCodeMap: [Int: String] = [:]
     
     var bankExchanges: [ModelExchanges] = []
-    var bankRates: [ModelBankRates] = []
     
     func getAllData(completion: @escaping () -> Void) {
         bankService.getAllData { [unowned self] (result) in
@@ -74,48 +70,6 @@ class BankExchangesViewModel {
                 
                 let bankExchange = ModelExchanges(bank: bankName, exchanges: exchanges)
                 bankExchanges.append(bankExchange)
-            }
-        }
-    }
-    
-    func refreshRates(completion: @escaping () -> Void) {
-        bankRates = []
-        bankService.getCurrencyRates(bankIds: Array(bankMap.keys)) { [unowned self] (result) in
-
-            switch result {
-            case .success(let data):
-                self.rates = data
-                self.prepareRates()
-                completion()
-            case .failure(_):
-                break
-            }
-        }
-    }
-    
-    func prepareRates() {
-
-        //Prepare bank rates data (for second screen)
-        rates?.forEach { (bankData) in
-            if let bankName = bankMap[bankData.bankId],
-                let fromId = fromId, let toId = toId {
-                
-                var rates: [ModelBankRate] = []
-                
-                let filteredRate = bankData.rates.data.filter({ (rate) -> Bool in
-                    rate.fromCurrency == fromId && rate.toCurrency == toId
-                }).first
-                
-                if let filteredRate = filteredRate {
-                    let rate = ModelBankRate(rate: "1 \(self.currencyCodeMap[fromId]!) = \(filteredRate.rate) \(self.currencyCodeMap[toId]!)")
-                    
-                    rates.append(rate)
-                    
-                    if rates.count > 0 {
-                        let bankRate = ModelBankRates(bank: bankName, rates: rates)
-                        bankRates.append(bankRate)
-                    }
-                }
             }
         }
     }

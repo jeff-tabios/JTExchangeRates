@@ -26,9 +26,10 @@ extension BankExchangesViewController: UITableViewDelegate, UITableViewDataSourc
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExchangeCell", for: indexPath) as! BankExchangeCell
         
-        cell.vm = viewModel
         cell.fromId = viewModel.bankExchanges[indexPath.section].exchanges[indexPath.row].fromId
         cell.toId = viewModel.bankExchanges[indexPath.section].exchanges[indexPath.row].toId
+        cell.bankMap = viewModel.bankMap
+        cell.currencyCodeMap = viewModel.currencyCodeMap
         cell.textLabel?.text = viewModel.bankExchanges[indexPath.section].exchanges[indexPath.row].label
         return cell
         
