@@ -1,6 +1,6 @@
 //
 //  BankExchangesViewModelTests.swift
-//  CurrencyRates-SwiftUITests
+//  ExchangeRatesTests
 //
 //  Created by Jeff Tabios on 3/21/21.
 //  Copyright © 2021 Jeff Tabios. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  ModelCurrencies.swift
-//  CurrencyRates-SwiftUI
+//  ExchangeRates
 //
 //  Created by Jeff Tabios on 3/21/21.
 //  Copyright © 2021 Jeff Tabios. All rights reserved.
