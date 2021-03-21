@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BankExchangesViewModel: ObservableObject {
+class BankExchangesViewModel {
     let bankService = BankService()
     
     var fromId: Int?
@@ -22,8 +22,8 @@ class BankExchangesViewModel: ObservableObject {
     var currencyMap: [Int: String] = [:]
     var currencyCodeMap: [Int: String] = [:]
     
-    @Published var bankExchanges: [ModelExchanges] = []
-    @Published var bankRates: [ModelBankRates] = []
+    var bankExchanges: [ModelExchanges] = []
+    var bankRates: [ModelBankRates] = []
     
     func getAllData(completion: @escaping () -> Void) {
         bankService.getAllData { [unowned self] (result) in
