@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ModelExchanges: Identifiable {
+struct ModelExchanges {
     
     let bank: String
     let exchanges: [ModelExchange]
@@ -19,7 +19,7 @@ class ModelExchanges: Identifiable {
     }
 }
 
-class ModelExchange: Identifiable, Hashable {
+struct ModelExchange {
     let fromId: Int
     let toId: Int
     let label: String
@@ -28,13 +28,5 @@ class ModelExchange: Identifiable, Hashable {
         self.fromId = fromId
         self.toId = toId
         self.label = label
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(label)
-    }
-    
-    static func == (lhs: ModelExchange, rhs: ModelExchange) -> Bool {
-        lhs.label == rhs.label
     }
 }

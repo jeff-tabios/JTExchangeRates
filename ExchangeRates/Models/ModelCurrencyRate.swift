@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - CurrencyRates
-class ModelCurrencyRates: Codable {
+struct ModelCurrencyRates: Codable {
     
     let bankId: Int
     let rates: ModelCurrencyRate
@@ -21,7 +21,7 @@ class ModelCurrencyRates: Codable {
 }
 
 // MARK: - CurrencyRate
-class ModelCurrencyRate: Codable {
+struct ModelCurrencyRate: Codable {
     
     let data: [RateData]
     let status: Bool
@@ -33,7 +33,7 @@ class ModelCurrencyRate: Codable {
 }
 
 // MARK: - Datum
-class RateData: Codable {
+struct RateData: Codable {
     let fromCurrency: Int
     let rate: Double
     let toCurrency: Int

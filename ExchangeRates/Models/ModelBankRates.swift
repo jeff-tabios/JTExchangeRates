@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ModelBankRates: Identifiable {
+struct ModelBankRates {
     
     let bank: String
     let rates: [ModelBankRate]
@@ -19,18 +19,10 @@ class ModelBankRates: Identifiable {
     }
 }
 
-class ModelBankRate: Identifiable, Hashable {
+struct ModelBankRate {
    let rate: String
 
     init(rate: String) {
         self.rate = rate
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(rate)
-    }
-    
-    static func == (lhs: ModelBankRate, rhs: ModelBankRate) -> Bool {
-        lhs.rate == rhs.rate
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Currencies
-class ModelCurrencies: Codable {
+struct ModelCurrencies: Codable {
     let data: [CurrencyData]
     let status: Bool
 
@@ -20,7 +20,7 @@ class ModelCurrencies: Codable {
 }
 
 // MARK: - Datum
-class CurrencyData: Codable {
+struct CurrencyData: Codable {
     let code: String
     let id: Int
     let name: String
