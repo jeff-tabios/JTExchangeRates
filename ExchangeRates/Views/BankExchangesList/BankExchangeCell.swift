@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BankExchangeCell: UITableViewCell {
+final class BankExchangeCell: UITableViewCell {
     
     var fromId: Int?
     var toId: Int?

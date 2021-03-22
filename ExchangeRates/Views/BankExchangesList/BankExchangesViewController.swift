@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BankExchangesViewController: UIViewController {
+final class BankExchangesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var viewModel = BankExchangesViewModel()
@@ -26,8 +26,8 @@ class BankExchangesViewController: UIViewController {
                     
                     ratesVC.viewModel.fromId = s.fromId
                     ratesVC.viewModel.toId = s.toId
-                    ratesVC.viewModel.bankMap = s.bankMap
-                    ratesVC.viewModel.currencyCodeMap = s.currencyCodeMap
+                    ratesVC.viewModel.bankMap = viewModel.bankMap
+                    ratesVC.viewModel.currencyCodeMap = viewModel.currencyCodeMap
                 }
             }
         }

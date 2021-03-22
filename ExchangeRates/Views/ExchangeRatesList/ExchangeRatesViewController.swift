@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ExchangeRatesViewController: UIViewController {
+final class ExchangeRatesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     lazy var refreshControl = UIRefreshControl()
     var viewModel = ExchangeRatesViewModel()

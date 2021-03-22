@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BankService: API {
+final class BankService: API {
     
     func getAllData(completion: @escaping (Result<(ModelBanks?, ModelCurrencies?, [ModelCurrencyRates]?), APIServiceError>)->Void) {
         

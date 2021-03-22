@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BankExchangesViewModel {
+final class BankExchangesViewModel {
     let bankService = BankService()
     
     var banks: ModelBanks?

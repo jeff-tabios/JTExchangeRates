@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ExchangeRatesViewModel {
+final class ExchangeRatesViewModel {
     let bankService = BankService()
     
     var fromId: Int?
